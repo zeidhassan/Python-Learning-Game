@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "db:schema": "bash -lc 'set -a; source .env; set +a; psql \"$DATABASE_URL\" -f sql/schema.sql'",
+    "db:seed": "bash -lc 'set -a; source .env; set +a; psql \"$DATABASE_URL\" -f sql/seed.sql'",
+    "db:reset": "bash -lc 'set -a; source .env; set +a; psql \"$DATABASE_URL\" -f sql/reset.sql'",
+    "test": "echo \"No tests configured yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-pg-simple": "^10.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "pg": "^8.18.0",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  --bg: #f6f2e8;
+  --ink: #101826;
+  --ink-soft: #263345;
+  --muted: #66758a;
+  --line: rgba(20, 32, 44, 0.09);
+  --line-strong: rgba(20, 32, 44, 0.16);
+  --accent: #1075bc;
+  --accent-2: #0b9898;
+  --accent-soft: rgba(16, 117, 188, 0.24);
+  --good: #2a884e;
+  --warn: #b87600;
+  --danger: #c22839;
+  --shadow: 0 18px 45px rgba(18, 34, 48, 0.12);
+  --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(244, 180, 0, 0.18), transparent 42%),
+    radial-gradient(circle at 85% 0%, rgba(11, 152, 152, 0.16), transparent 40%),
+    linear-gradient(180deg, #f6f2e8 0%, #f0f5fb 55%, #eef7f4 100%);
+}
+
+a {
+  color: inherit;
+}
